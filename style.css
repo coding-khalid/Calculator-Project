@@ -1,0 +1,93 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000;
+	font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: 0 0 0 20px #222;
+}
+
+.container h6 {
+	background-color: #555;
+	color: #111;
+	text-align:center;
+	padding:5px;
+	font-family:Tahoma,Arial,sans-serif;
+}
+
+.screen {
+	background-color: #000;
+	height: 140px;
+	margin: auto;
+}
+
+.screenContent {
+	text-align: right;
+	padding: 20px;
+	font-size: 40px;
+	user-select: none;
+}
+
+.calc {
+	color: #fff;
+	font-size: 20px;
+	overflow: auto;
+	padding-top: 10px;
+}
+
+.result {
+	color: #fff;
+	font-size: 40px;
+	padding-top: 10px;
+}
+
+table {
+	border-collapse: collapse;
+	animation: color 2s linear infinite;
+}
+
+@keyframes color {
+	0% {
+		background-color: #fff;
+	}
+	25% {
+		background-color: #333;
+	}
+	50% {
+		background-color: #111;
+	}
+	75% {
+		background-color: #111;
+	}
+	100% {
+		background-color: #000;
+	}
+}
+
+.btn {
+	background-color: #111;
+	color: #fff;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 25%;
+}
+
+.ope, .math {
+	color: green;
+	font-family: "Fira Sans", sans-serif;
+}
